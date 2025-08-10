@@ -4,7 +4,8 @@ available_seats = 2
 
 class Movie:
     def __init__(self):
-        self.lock = threading.Lock()
+        # self.lock = threading.Lock()
+        self.lock = threading.RLock()
 
     def booking(self, number_of_seats):
         global available_seats
