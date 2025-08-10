@@ -9,7 +9,6 @@ def do_math(start=0, num=10):
     position = start
     random_number = 1000 * 1000
     while position < num:
-        print(position)
         position += 1
         math.sqrt((position - random_number) ** 2)
 
